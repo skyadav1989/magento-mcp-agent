@@ -11,11 +11,13 @@ class Settings(BaseSettings):
     port: int = 10000
 
     # Public MCP resource URL, e.g. https://your-service.onrender.com/mcp
-    mcp_resource_url: str = 'http://localhost:8000/mcp'
-    oauth_issuer_url: str = 'https://issuer.example.com'
+    mcp_resource_url: str = 'https://magento-mcp-agent-1.onrender.com/mcp'
+    oauth_issuer_url: str = ''
     jwt_audience: str = ''
     jwt_jwks_url: str = ''
     jwt_algorithms: str = 'RS256'
+    
+    
 
     # Development-only fallback. Keep empty in production when JWKS is configured.
     dev_jwt_secret: str = ''
